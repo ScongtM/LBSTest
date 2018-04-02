@@ -17,9 +17,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    sourceSets{
-        main{
-            jniLibs.srcDirs=['libs',"src/main/jniLibs"]
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs', "src/main/jniLibs"]
         }
     }
 }

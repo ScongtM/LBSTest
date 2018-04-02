@@ -23,18 +23,22 @@
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="fIULTYYVESV2ry2l3yDgaHZhpXwMc43F" />
-        <activity android:name=".MainActivity">
+
+        <activity android:name=".MainActivity"></activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity android:name=".LbsActivity" />
+        <activity android:name=".SelectActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <service
-            android:name="com.baidu.location.f"
-            android:enabled="true"
-            android:process=":remote"></service>
     </application>
 
 </manifest>
